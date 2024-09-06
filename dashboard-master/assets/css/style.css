@@ -1061,32 +1061,59 @@ body {
             
             margin: 20px auto;
             background-color: #fff;
-            border: 2px solid blue;
+            border: 5px solid black;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
  
         th,
         td {
-            border: 1px solid #dee2e6;
+            border: 1px solid black;
             padding: 10px;
             text-align: center;
         }
  
         th {
-            background-color: #f2f2f2;
+            background-color: white;
             color: #343a40;
         }
  
         .highlight {
-            background-color: #f8f9fa;
+            background-color: white;
         }
  
-        .booked {
-            background-color: orange;
-        }
+        
 
-        .unbooked {
-          background-color: green;
-      }
+       
 
+      .booked {
+  position: relative;
+  cursor: pointer;
+  background-color: orange;
+}
+
+.unbooked {
+  position: relative;
+  cursor: pointer;
+  background-color: green;
+}
+
+.hover-text {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.booked:hover .hover-text {
+  visibility: visible;
+}
+.unbooked:hover .hover-text {
+  visibility: visible;
+}
     
