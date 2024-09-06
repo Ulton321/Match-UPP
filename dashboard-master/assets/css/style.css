@@ -1047,3 +1047,46 @@ body {
   .card-price { --fs-2: 1.780rem; }
 
 }
+
+
+       
+ 
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+ 
+        table {
+            border-collapse: collapse;
+            
+            margin: 20px auto;
+            background-color: #fff;
+            border: 2px solid blue;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+ 
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center;
+        }
+ 
+        th {
+            background-color: #f2f2f2;
+            color: #343a40;
+        }
+ 
+        .highlight {
+            background-color: #f8f9fa;
+        }
+ 
+        .booked {
+            background-color: orange;
+        }
+
+        .unbooked {
+          background-color: green;
+      }
+
+    
