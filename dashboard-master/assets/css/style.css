@@ -1070,31 +1070,36 @@ body {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+            color: white;
+            background-color: #003479;
         }
  
         th {
             background-color: white;
-            color: #343a40;
+            color: white;
+            background-color: #003479;
         }
  
         .highlight {
             background-color: white;
         }
- 
-        
 
-       
+        .court{
+          background-color: #f0f0f0;
+          color: black;
+        }
+
 
       .booked {
   position: relative;
   cursor: pointer;
-  background-color: orange;
+  background-color: #850808;
 }
 
 .unbooked {
   position: relative;
   cursor: pointer;
-  background-color: green;
+  background-color: white;
 }
 
 .hover-text {
