@@ -1072,22 +1072,36 @@
       display: flex;
       gap: 20px; /* Space between the boxes */
       justify-content: center; /* Center the boxes in the container */
+      position: relative;
     }
 
+    section h1 {
+      font-size: 2rem;
+      margin-bottom: 100px;
+      position: absolute; /* Positions h1 absolutely relative to the section */
+      top: -95px; /* Positions it at the top of the section */
+      left: 50%; /* Centers it horizontally */
+      transform: translateX(-50%); /* Adjusts the centering */
+      z-index: 10; /* Ensures h1 is above other content */
+      color: #003cff88;
+  }
     
-     article {
-        width: 500px;
-        aspect-ratio: 2 / 1.1;
-        min-height: 300px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 4em;
-        max-width: calc(100% - 2rem);
-        background: hsl(0 0% 50%);
-        top: -120px;
-        
-    }
-    
+
+
+    article {
+      width: 400px;
+      aspect-ratio: 2 / 1.1;
+      min-height: 300px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 4em;
+      max-width: calc(100% - 2rem);
+      background: hsl(0 0% 50%);
+      top: -70px;
+
+      margin: 50px 20px;
+  }
+  
     article > img {
         position: absolute;
         top: 0;
@@ -1120,11 +1134,11 @@
         left: 50%;
         top: 6%;
         margin: 0;
-        font-size: 8rem;
+        font-size: 6rem;
         translate: -50% 0;
         text-transform: uppercase;
         font-family: 'Bebas Neue', sans-serif;
-        color: white;
+        color: rgb(255, 255, 255);
         translate: calc(-50% + (var(--x) * -30px)) calc(var(--y) * -20px);
     }
     
@@ -1208,4 +1222,7 @@
         width: 75%;
     }
  
+
+/* Book court */
+
 
