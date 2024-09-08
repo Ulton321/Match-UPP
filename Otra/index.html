@@ -44,8 +44,7 @@
     <div class="container">
 
       <h1>
-        <a href="#">
-          <img src = "./assets/images/Finalized Logo copy.png" alt = "Match-up" style = "width: 80px; height: 80px;">
+        <a href="#" class="logo">Dashboard </a>
       </h1>
 
       <button class="menu-toggle-btn icon-box" data-menu-toggle-btn aria-label="Toggle Menu">
@@ -58,35 +57,26 @@
           <ul class="navbar-list">
 
             <li>
-              <a href="#" class="navbar-link active icon-box">
-                <span class="material-symbols-rounded  icon">grid_view</span>
-
+              <button class="navbar-link icon-box" type="button" onclick="window.location.href='index.html';">
+                <span class="material-symbols-rounded icon">grid_view</span>
                 <span>Home</span>
-              </a>
+              </button>
+            </li>         
+            <li>
+              <button class="navbar-link icon-box" type="button" onclick="window.location.href='Otra/index.html';">
+                <span class="material-symbols-rounded icon">bar_chart</span>
+                <a href="Otra/index.html" style="text-decoration: none; color: inherit;">
+                  <span>Report</span>
+                </a>
+              </button>
             </li>
+            
 
             <li>
-              <a href="#" class="navbar-link icon-box">
-                <span class="material-symbols-rounded  icon">folder</span>
-
-                <span>Projects</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link icon-box">
-                <span class="material-symbols-rounded  icon">list</span>
-
-                <span>Tasks</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="Otra\index.html" class="navbar-link icon-box">
-                <span class="material-symbols-rounded  icon">bar_chart</span>
-
-                <span>Reports</span>
-              </a>
+              <button class="navbar-link icon-box" type="button" onclick="window.location.href='time.html';">
+                <span class="material-symbols-rounded icon">list</span>
+                <span>TimeTable</span>
+              </button>
             </li>
 
             <li>
@@ -97,14 +87,6 @@
               </a>
             </li>
 
-            
-            <li>
-              <a href="#" class="navbar-link icon-box">
-                <span class="material-symbols-rounded  icon">settings</span>
-
-                <span>Account</span>
-              </a>
-            </li>
           </ul>
 
           <ul class="user-action-list">
@@ -119,11 +101,11 @@
               <a href="#" class="header-profile">
 
                 <figure class="profile-avatar">
-                  <img src="./assets/images/photo_2024-07-29_20-25-39.jpg" alt="Elizabeth Foster" width="32" height="32">
+                  <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\Finalized Logo.png" alt="Match Up" width="32" height="32">
                 </figure>
 
                 <div>
-                  <p class="profile-title">Otra</p>
+                  <p class="profile-title">Jimmy</p>
 
                   <p class="profile-subtitle">Admin</p>
                 </div>
@@ -146,9 +128,9 @@
   <main>
     <article class="container article">
 
-      <h2 class="h2 article-title">Hi Otra</h2>
+      <h2 class="h2 article-title">Hi Jimmy</h2>
 
-      <p class="article-subtitle">Welcome to Match-up</p>
+      <p class="article-subtitle">Welcome to Match Up Dashboard!</p>
 
       <!-- 
         - #HOME
@@ -195,13 +177,13 @@
           <div class="profile-card-wrapper">
 
             <figure class="card-avatar">
-              <img src="./assets/images/photo_2024-07-29_20-25-39.jpg" alt="Elizabeth Foster" width="48" height="48">
+              <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\Finalized Logo.png" alt="Match Up" width="48" height="48">
             </figure>
 
             <div>
-              <p class="card-title">Son Sophak Otra</p>
+              <p class="card-title">AUPP Sport Club</p>
 
-              <p class="card-subtitle">Web & Graphic Designer</p>
+              <p class="card-subtitle">Volleyball/Basketball/Tennis Facilities</p>
             </div>
 
           </div>
@@ -212,7 +194,7 @@
               <a href="mailto:xyz@mail.com" class="contact-link icon-box">
                 <span class="material-symbols-rounded  icon">mail</span>
 
-                <p class="text">xyz@mail.com</p>
+                <p class="text">auppsportclub@gmail.com</p>
               </a>
             </li>
 
@@ -220,7 +202,7 @@
               <a href="tel:00123456789" class="contact-link icon-box">
                 <span class="material-symbols-rounded  icon">call</span>
 
-                <p class="text">+00 123-456-789</p>
+                <p class="text">+855 12 345 678</p>
               </a>
             </li>
 
@@ -233,9 +215,9 @@
             <li class="progress-item">
 
               <div class="progress-label">
-                <p class="progress-title">Project Completion</p>
+                <p class="progress-title">Courts booked</p>
 
-                <data class="progress-data" value="85">85%</data>
+                <data class="progress-data" value="85">80%</data>
               </div>
 
               <div class="progress-bar">
@@ -258,6 +240,34 @@
 
             </li>
 
+            <li class="progress-item">
+
+              <div class="progress-label">
+                <p class="progress-title">Courts booked Online</p>
+
+                <data class="progress-data" value="85">70%</data>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress" style="--width: 70%; --bg: var(--emerald);"></div>
+              </div>
+
+            </li>
+
+            <li class="progress-item">
+
+              <div class="progress-label">
+                <p class="progress-title">Courts booked Offline</p>
+
+                <data class="progress-data" value="85%">30%</data>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress" style="--width: 30%; --bg: var(--sunglow);"></div>
+              </div>
+
+            </li>
+
           </ul>
 
         </div>
@@ -271,23 +281,38 @@
             </div>
 
             <div>
-              <data class="card-data" value="21">21</data>
+              <data class="card-data" value="21">4</data>
 
-              <p class="card-text">Tasks Completed</p>
+              <p class="card-text">Volleyball Court Available</p>
+            </div>
+
+
+          </div>
+
+          <div class="card task-card">
+
+            <div class="card-icon icon-box green">
+              <span class="material-symbols-rounded  icon">task_alt</span>
+            </div>
+
+            <div>
+              <data class="card-data" value="21">1</data>
+
+              <p class="card-text">Basketball Court Available</p>
             </div>
 
           </div>
 
           <div class="card task-card">
 
-            <div class="card-icon icon-box blue">
-              <span class="material-symbols-rounded  icon">drive_file_rename_outline</span>
+            <div class="card-icon icon-box green">
+              <span class="material-symbols-rounded  icon">task_alt</span>
             </div>
 
             <div>
-              <data class="card-data" value="21">21</data>
+              <data class="card-data" value="21">1</data>
 
-              <p class="card-text">Tasks Inprogress</p>
+              <p class="card-text">Tennis Court Available</p>
             </div>
 
           </div>
@@ -322,9 +347,9 @@
 
           <p class="card-title">Revenue</p>
 
-          <data class="card-price" value="2100">$2,100</data>
+          <data class="card-price" value="2100">$3,0000</data>
 
-          <p class="card-text">Last Week</p>
+          <p class="card-text">This Week</p>
 
           <div class="divider card-divider"></div>
 
@@ -370,7 +395,7 @@
       <section class="projects">
 
         <div class="section-title-wrapper">
-          <h2 class="section-title">Recent Projects</h2>
+          <h2 class="section-title">Court Booked</h2>
 
           <button class="btn btn-link icon-box">
             <span>View All</span>
@@ -418,17 +443,31 @@
 
               </ul>
 
-              <time class="card-date" datetime="2022-04-09">Apr 09, 2022</time>
+              <time class="card-date" datetime="2022-04-09">Aug 28, 2024</time>
 
               <h3 class="card-title">
-                <a href="#">Shreyu - Design Updates</a>
+                <a href="#">Court 1</a>
               </h3>
 
-              <div class="card-badge blue">Designing</div>
+              <div class="card-badge red">Booked</div>
 
               <p class="card-text">
-                Update shreyu with modern and latest trends...
+                11:00 AM  - 1:00 PM (Nami)
+          
               </p>
+
+              <p class="card-text">
+                1:00 PM - 3:00 PM (Luffy)
+          
+              </p>
+              <p class="card-text">
+                3:00 PM - 6:00 PM (Zoro)
+              </p>
+
+              <p class="card-text">
+                6:00 PM - 9:00 PM (Sanji)
+              </p>
+            
 
               <div class="card-progress-box">
 
@@ -448,13 +487,25 @@
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="./assets/images/avatar-1.jpg" alt="Elizabeth Foster" width="32" height="32">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\nami.png" alt="Nami" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="./assets/images/avatar-2.jpg" alt="John Foster" width="32" height="32">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\luffy.jpg" alt="Luffy" width="32" height="32">
+                  </a>
+                </li>
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\zoro.jpg" alt="zoro" width="32" height="32">
+                  </a>
+                </li>
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\Sanji.png" alt="Sanji" width="32" height="32">
                   </a>
                 </li>
 
@@ -500,16 +551,19 @@
 
               </ul>
 
-              <time class="card-date" datetime="2022-04-09">Apr 09, 2022</time>
+              <time class="card-date" datetime="2022-04-09">Aug 28, 2024</time>
 
               <h3 class="card-title">
-                <a href="#">Prompt v2.0</a>
+                <a href="#">Court 2</a>
               </h3>
 
-              <div class="card-badge orange">Planning</div>
+              <div class="card-badge red">Booked</div>
 
               <p class="card-text">
-                Plan new features and functionality for prompt...
+                8:00 AM - 9:00 AM (Luffy)
+              </p>
+              <p class="card-text">
+                9:00 AM - 11:00 AM (Zoro)
               </p>
 
               <div class="card-progress-box">
@@ -530,13 +584,13 @@
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="./assets/images/avatar-1.jpg" alt="Elizabeth Foster" width="32" height="32">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\luffy.jpg" alt="Luffy" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="./assets/images/avatar-2.jpg" alt="John Foster" width="32" height="32">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\zoro.jpg" alt="zoro" width="32" height="32">
                   </a>
                 </li>
 
@@ -582,16 +636,19 @@
 
               </ul>
 
-              <time class="card-date" datetime="2022-04-09">Apr 09, 2022</time>
+              <time class="card-date" datetime="2022-04-09">Aug 28, 2024</time>
 
               <h3 class="card-title">
-                <a href="#">Hyper React v4.0</a>
+                <a href="#">Court 3</a>
               </h3>
 
-              <div class="card-badge cyan">Development</div>
+              <div class="card-badge red">Booked</div>
 
               <p class="card-text">
-                Update shreyu with modern and latest trends...
+                8:00 AM - 9:00 AM (Luffy)
+              </p>
+              <p class="card-text">
+                9:00 AM - 11:00 AM (Zoro)
               </p>
 
               <div class="card-progress-box">
@@ -612,13 +669,13 @@
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="./assets/images/avatar-1.jpg" alt="Elizabeth Foster" width="32" height="32">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\luffy.jpg" alt="luffy" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="./assets/images/avatar-2.jpg" alt="John Foster" width="32" height="32">
+                    <img src="C:\Users\user\mtch up\Match-UPP\dashboard-master\assets\images\zoro.jpg" alt="zoro" width="32" height="32">
                   </a>
                 </li>
 
@@ -638,189 +695,7 @@
         - #TASKS
       -->
 
-      <section class="tasks">
-
-        <div class="section-title-wrapper">
-          <h2 class="section-title">Tasks</h2>
-
-          <button class="btn btn-link icon-box">
-            <span>View All</span>
-
-            <span class="material-symbols-rounded  icon" aria-hidden="true">arrow_forward</span>
-          </button>
-        </div>
-
-        <ul class="tasks-list">
-
-          <li class="tasks-item">
-            <div class="card task-card">
-
-              <div class="card-input">
-                <input type="checkbox" name="task-1" id="task-1">
-
-                <label for="task-1" class="task-label">
-                  Draft the new contract document for sales team
-                </label>
-              </div>
-
-              <div class="card-badge cyan radius-pill">Today 10pm</div>
-
-              <ul class="card-meta-list">
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">list</span>
-
-                    <span>3/7</span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">comment</span>
-
-                    <data value="21">21</data>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="card-badge red">High</div>
-                </li>
-
-              </ul>
-
-            </div>
-          </li>
-
-          <li class="tasks-item">
-            <div class="card task-card">
-
-              <div class="card-input">
-                <input type="checkbox" name="task-2" id="task-2">
-
-                <label for="task-2" class="task-label">
-                  iOS App home page design
-                </label>
-              </div>
-
-              <div class="card-badge cyan radius-pill">Today 5pm</div>
-
-              <ul class="card-meta-list">
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">list</span>
-
-                    <span>10/11</span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">comment</span>
-
-                    <data value="5">5</data>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="card-badge orange">Medium</div>
-                </li>
-
-              </ul>
-
-            </div>
-          </li>
-
-          <li class="tasks-item">
-            <div class="card task-card">
-
-              <div class="card-input">
-                <input type="checkbox" name="task-3" id="task-3">
-
-                <label for="task-3" class="task-label">
-                  Enable analytics tracking
-                </label>
-              </div>
-
-              <div class="card-badge radius-pill">Tomorrow 5pm</div>
-
-              <ul class="card-meta-list">
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">list</span>
-
-                    <span>5/11</span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">comment</span>
-
-                    <data value="7">7</data>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="card-badge orange">Medium</div>
-                </li>
-
-              </ul>
-
-            </div>
-          </li>
-
-          <li class="tasks-item">
-            <div class="card task-card">
-
-              <div class="card-input">
-                <input type="checkbox" name="task-4" id="task-4">
-
-                <label for="task-4" class="task-label">
-                  Kanban board design
-                </label>
-              </div>
-
-              <div class="card-badge radius-pill">Sep 11, 3pm</div>
-
-              <ul class="card-meta-list">
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">list</span>
-
-                    <span>0/5</span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="meta-box icon-box">
-                    <span class="material-symbols-rounded  icon">comment</span>
-
-                    <data value="3">3</data>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="card-badge green">Low</div>
-                </li>
-
-              </ul>
-
-            </div>
-          </li>
-
-        </ul>
-
-        <button class="btn btn-primary" data-load-more>
-          <span class="spiner"></span>
-
-          <span>Load More</span>
-        </button>
-
-      </section>
+      
 
     </article>
   </main>
@@ -865,7 +740,7 @@
       </ul>
 
       <p class="copyright">
-        &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+        &copy; 2024 <a href="#" class="copyright-link">matchup</a>. All Rights Reserved
       </p>
 
     </div>

@@ -1047,3 +1047,78 @@ body {
   .card-price { --fs-2: 1.780rem; }
 
 }
+
+
+       
+ 
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+ 
+        table {
+            border-collapse: collapse;
+            
+            margin: 20px auto;
+            background-color: #fff;
+            border: 5px solid black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+ 
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: #003479;
+        }
+ 
+        th {
+            background-color: white;
+            color: white;
+            background-color: #003479;
+        }
+ 
+        .highlight {
+            background-color: white;
+        }
+
+        .court{
+          background-color: #f0f0f0;
+          color: black;
+        }
+
+
+      .booked {
+  position: relative;
+  cursor: pointer;
+  background-color: #850808;
+}
+
+.unbooked {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+.hover-text {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.booked:hover .hover-text {
+  visibility: visible;
+}
+.unbooked:hover .hover-text {
+  visibility: visible;
+}
+    
