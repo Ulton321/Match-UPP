@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match-up</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon link
+  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">
+          <img src="./assets/images/Finalized Logo.png" alt="Match Up" width="40" height="40">
+        </a>
+      </h1>
+
+      <button class="menu-toggle-btn icon-box" data-menu-toggle-btn aria-label="Toggle Menu">
+        <span class="material-symbols-rounded  icon">menu</span>
+      </button>
+
+      <nav class="navbar">
+        <div class="container">
+
+          <ul class="navbar-list">
+
+            <li>
+              <button class="navbar-link icon-box" type="button" onclick="window.location.href='index.html';">
+                <span class="material-symbols-rounded icon">grid_view</span>
+                <span>Home</span>
+              </button>
+            </li>
+            <li>
+              <button class="navbar-link icon-box" type="button" onclick="window.location.href='Otra/index.html';">
+                <span class="material-symbols-rounded icon">bar_chart</span>
+                <a href="Otra/index.html" style="text-decoration: none; color: inherit;">
+                  <span>Report</span>
+                </a>
+              </button>
+            </li>
+
+
+            <li>
+              <button class="navbar-link icon-box" type="button" onclick="window.location.href='time.html';">
+                <span class="material-symbols-rounded icon">list</span>
+                <span>TimeTable</span>
+              </button>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link icon-box">
+                <span class="material-symbols-rounded  icon">settings</span>
+
+                <span>Settings</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="user-action-list">
+
+            <li>
+              <a href="#" class="notification icon-box">
+                <span class="material-symbols-rounded  icon">notifications</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="header-profile">
+                
+                <figure class="profile-avatar">
+                  <img src="assets/images/nami.png" alt="Match Up" width="30" height="30">
+                </figure>
+
+                <div>
+                  <p class="profile-title">Son Sophak Otra</p>
+
+                  <p class="profile-subtitle">Admin</p>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container article">
+
+      <h2 class="h2 article-title">Hi Jimmy</h2>
+
+      <p class="article-subtitle">Welcome to Match Up Dashboard!</p>
+
+      <!-- 
+        - #HOME
+      -->
+
+      <section class="home">
+
+        <div class="card profile-card">
+
+          <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+            <span class="material-symbols-rounded  icon">more_horiz</span>
+          </button>
+
+          <ul class="ctx-menu">
+
+            <li class="ctx-item">
+              <button class="ctx-menu-btn icon-box">
+                <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+
+                <span class="ctx-menu-text">Edit</span>
+              </button>
+            </li>
+
+            <li class="ctx-item">
+              <button class="ctx-menu-btn icon-box">
+                <span class="material-symbols-rounded  icon" aria-hidden="true">cached</span>
+
+                <span class="ctx-menu-text">Refresh</span>
+              </button>
+            </li>
+
+            <li class="divider"></li>
+
+            <li class="ctx-item">
+              <button class="ctx-menu-btn red icon-box">
+                <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
+
+                <span class="ctx-menu-text">Deactivate</span>
+              </button>
+            </li>
+
+          </ul>
+
+          <div class="profile-card-wrapper">
+
+            <figure class="card-avatar">
+              <img src="assets/images/Finalized Logo.png" alt="Match Up" width="48" height="48">
+            </figure>
+
+
+            <div>
+              <p class="card-title">AUPP Sport Club</p>
+
+              <p class="card-subtitle">Volleyball/Basketball/Tennis Facilities</p>
+            </div>
+
+          </div>
+
+          <ul class="contact-list">
+
+            <li>
+              <a href="mailto:xyz@mail.com" class="contact-link icon-box">
+                <span class="material-symbols-rounded  icon">mail</span>
+
+                <p class="text">auppsportclub@gmail.com</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:00123456789" class="contact-link icon-box">
+                <span class="material-symbols-rounded  icon">call</span>
+
+                <p class="text">+855 12 345 678</p>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="divider card-divider"></div>
+
+          <ul class="progress-list">
+
+            <li class="progress-item">
+
+              <div class="progress-label">
+                <p class="progress-title">Courts booked</p>
+
+                <data class="progress-data" value="85">80%</data>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress" style="--width: 85%; --bg: var(--blue-ryb);"></div>
+              </div>
+
+            </li>
+
+            <li class="progress-item">
+
+              <div class="progress-label">
+                <p class="progress-title">Overall Rating</p>
+
+                <data class="progress-data" value="7.5">7.5</data>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress" style="--width: 75%; --bg: var(--coral);"></div>
+              </div>
+
+            </li>
+
+            <li class="progress-item">
+
+              <div class="progress-label">
+                <p class="progress-title">Courts booked Online</p>
+
+                <data class="progress-data" value="85">70%</data>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress" style="--width: 70%; --bg: var(--emerald);"></div>
+              </div>
+
+            </li>
+
+            <li class="progress-item">
+
+              <div class="progress-label">
+                <p class="progress-title">Courts booked Offline</p>
+
+                <data class="progress-data" value="85%">30%</data>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress" style="--width: 30%; --bg: var(--sunglow);"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="card-wrapper">
+
+          <div class="card task-card">
+
+            <div class="card-icon icon-box green">
+              <span class="material-symbols-rounded  icon">task_alt</span>
+            </div>
+
+            <div>
+              <data class="card-data" value="21">4</data>
+
+              <p class="card-text">Volleyball Court Available</p>
+            </div>
+
+
+          </div>
+
+          <div class="card task-card">
+
+            <div class="card-icon icon-box green">
+              <span class="material-symbols-rounded  icon">task_alt</span>
+            </div>
+
+            <div>
+              <data class="card-data" value="21">1</data>
+
+              <p class="card-text">Basketball Court Available</p>
+            </div>
+
+          </div>
+
+          <div class="card task-card">
+
+            <div class="card-icon icon-box green">
+              <span class="material-symbols-rounded  icon">task_alt</span>
+            </div>
+
+            <div>
+              <data class="card-data" value="21">1</data>
+
+              <p class="card-text">Tennis Court Available</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card revenue-card">
+
+          <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+            <span class="material-symbols-rounded  icon">more_horiz</span>
+          </button>
+
+          <ul class="ctx-menu">
+
+            <li class="ctx-item">
+              <button class="ctx-menu-btn icon-box">
+                <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+
+                <span class="ctx-menu-text">Edit</span>
+              </button>
+            </li>
+
+            <li class="ctx-item">
+              <button class="ctx-menu-btn icon-box">
+                <span class="material-symbols-rounded  icon" aria-hidden="true">cached</span>
+
+                <span class="ctx-menu-text">Refresh</span>
+              </button>
+            </li>
+
+          </ul>
+
+          <p class="card-title">Revenue</p>
+
+          <data class="card-price" value="2100">$3,0000</data>
+
+          <p class="card-text">This Week</p>
+
+          <div class="divider card-divider"></div>
+
+          <ul class="revenue-list">
+
+            <li class="revenue-item icon-box">
+
+              <span class="material-symbols-rounded  icon  green">trending_up</span>
+
+              <div>
+                <data class="revenue-item-data" value="15">15%</data>
+
+                <p class="revenue-item-text">Prev Week</p>
+              </div>
+
+            </li>
+
+            <li class="revenue-item icon-box">
+
+              <span class="material-symbols-rounded  icon  red">trending_down</span>
+
+              <div>
+                <data class="revenue-item-data" value="10">10%</data>
+
+                <p class="revenue-item-text">Prev Month</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="projects">
+
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Court Booked</h2>
+
+          <button class="btn btn-link icon-box">
+            <span>View All</span>
+
+            <span class="material-symbols-rounded  icon" aria-hidden="true">arrow_forward</span>
+          </button>
+        </div>
+
+        <ul class="project-list">
+
+          <li class="project-item">
+            <div class="card project-card">
+
+              <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+                <span class="material-symbols-rounded  icon">more_horiz</span>
+              </button>
+
+              <ul class="ctx-menu">
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">visibility</span>
+
+                    <span class="ctx-menu-text">View</span>
+                  </button>
+                </li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+
+                    <span class="ctx-menu-text">Edit</span>
+                  </button>
+                </li>
+
+                <li class="divider"></li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn red icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
+
+                    <span class="ctx-menu-text">Delete</span>
+                  </button>
+                </li>
+
+              </ul>
+
+              <time class="card-date" datetime="2022-04-09">Aug 28, 2024</time>
+
+              <h3 class="card-title">
+                <a href="#">Court 1</a>
+              </h3>
+
+              <div class="card-badge red">Booked</div>
+
+              <p class="card-text">
+                11:00 AM - 1:00 PM (Nami)
+
+              </p>
+
+              <p class="card-text">
+                1:00 PM - 3:00 PM (Luffy)
+
+              </p>
+              <p class="card-text">
+                3:00 PM - 6:00 PM (Zoro)
+              </p>
+
+              <p class="card-text">
+                6:00 PM - 9:00 PM (Sanji)
+              </p>
+
+
+              <div class="card-progress-box">
+
+                <div class="progress-label">
+                  <span class="progress-title">Progress</span>
+
+                  <data class="progress-data" value="75">75%</data>
+                </div>
+
+                <div class="progress-bar">
+                  <div class="progress" style="--width: 75%; --bg: var(--emerald);"></div>
+                </div>
+
+              </div>
+
+              <ul class="card-avatar-list">
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets\images\nami.png" alt="Nami"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets\images\luffy.jpg" alt="Luffy"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets\images\zoro.jpg" alt="zoro"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets/images/Sanji.png" alt="Sanji"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="card project-card">
+
+              <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+                <span class="material-symbols-rounded  icon">more_horiz</span>
+              </button>
+
+              <ul class="ctx-menu">
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">visibility</span>
+
+                    <span class="ctx-menu-text">View</span>
+                  </button>
+                </li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+
+                    <span class="ctx-menu-text">Edit</span>
+                  </button>
+                </li>
+
+                <li class="divider"></li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn red icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
+
+                    <span class="ctx-menu-text">Delete</span>
+                  </button>
+                </li>
+
+              </ul>
+
+              <time class="card-date" datetime="2022-04-09">Aug 28, 2024</time>
+
+              <h3 class="card-title">
+                <a href="#">Court 2</a>
+              </h3>
+
+              <div class="card-badge red">Booked</div>
+
+              <p class="card-text">
+                8:00 AM - 9:00 AM (Luffy)
+              </p>
+              <p class="card-text">
+                9:00 AM - 11:00 AM (Zoro)
+              </p>
+
+              <div class="card-progress-box">
+
+                <div class="progress-label">
+                  <span class="progress-title">Progress</span>
+
+                  <data class="progress-data" value="50">50%</data>
+                </div>
+
+                <div class="progress-bar">
+                  <div class="progress" style="--width: 50%; --bg: var(--imperial-red);"></div>
+                </div>
+
+              </div>
+
+              <ul class="card-avatar-list">
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets\images\luffy.jpg" alt="Luffy"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets\images\zoro.jpg" alt="zoro"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="card project-card">
+
+              <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+                <span class="material-symbols-rounded  icon">more_horiz</span>
+              </button>
+
+              <ul class="ctx-menu">
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">visibility</span>
+
+                    <span class="ctx-menu-text">View</span>
+                  </button>
+                </li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+
+                    <span class="ctx-menu-text">Edit</span>
+                  </button>
+                </li>
+
+                <li class="divider"></li>
+
+                <li class="ctx-item">
+                  <button class="ctx-menu-btn red icon-box">
+                    <span class="material-symbols-rounded  icon" aria-hidden="true">delete</span>
+
+                    <span class="ctx-menu-text">Delete</span>
+                  </button>
+                </li>
+
+              </ul>
+
+              <time class="card-date" datetime="2022-04-09">Aug 28, 2024</time>
+
+              <h3 class="card-title">
+                <a href="#">Court 3</a>
+              </h3>
+
+              <div class="card-badge red">Booked</div>
+
+              <p class="card-text">
+                8:00 AM - 9:00 AM (Luffy)
+              </p>
+              <p class="card-text">
+                9:00 AM - 11:00 AM (Zoro)
+              </p>
+
+              <div class="card-progress-box">
+
+                <div class="progress-label">
+                  <span class="progress-title">Progress</span>
+
+                  <data class="progress-data" value="60">60%</data>
+                </div>
+
+                <div class="progress-bar">
+                  <div class="progress" style="--width: 60%; --bg: var(--sunglow);"></div>
+                </div>
+
+              </div>
+
+              <ul class="card-avatar-list">
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets\images\luffy.jpg" alt="luffy"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+                <li class="card-avatar-item">
+                  <a href="#">
+                    <img src="assets\images\zoro.jpg" alt="zoro"
+                      width="32" height="32">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+      <!-- 
+        - #TASKS
+      -->
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">About</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Privacy</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Terms</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Developers</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Support</a>
+        </li>
+
+        <li class="footer-item">
+          <a href="#" class="footer-link">Careers</a>
+        </li>
+
+      </ul>
+
+      <p class="copyright">
+        &copy; 2024 <a href="#" class="copyright-link">matchup</a>. All Rights Reserved
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
