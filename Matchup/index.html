@@ -10,7 +10,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="assets/images/" type="image/svg+xml">
 
   <!-- 
     - custom css link
@@ -101,7 +101,7 @@
 
             <li>
               <a href="#" class="header-profile">
-                
+
                 <figure class="profile-avatar">
                   <img src="assets/images/nami.png" alt="Match Up" width="30" height="30">
                 </figure>
@@ -128,7 +128,7 @@
   <main>
     <article class="container article">
 
-      <h2 class="h2 article-title">Hi Jimmy</h2>
+      <h2 class="h2 article-title">Hi Otra</h2>
 
       <p class="article-subtitle">Welcome to Match Up Dashboard!</p>
 
@@ -339,7 +339,6 @@
             <li class="ctx-item">
               <button class="ctx-menu-btn icon-box">
                 <span class="material-symbols-rounded  icon" aria-hidden="true">cached</span>
-
                 <span class="ctx-menu-text">Refresh</span>
               </button>
             </li>
@@ -379,8 +378,17 @@
               </div>
 
             </li>
+            <div class="divider card-divider"></div>
+            <div class="divider card-divider"></div>
 
           </ul>
+
+          <!-- pie chart -->
+          <div class="card-body" style="height: 150px;">
+            <h5 class="card-title">Court Usage Pie Chart</h5>
+            <canvas id="courtPieChart" style="height: 100% !important; width: 100% !important;"></canvas>
+          </div>
+
 
         </div>
 
@@ -488,29 +496,25 @@
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets\images\nami.png" alt="Nami"
-                      width="32" height="32">
+                    <img src="assets\images\nami.png" alt="Nami" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets\images\luffy.jpg" alt="Luffy"
-                      width="32" height="32">
+                    <img src="assets\images\luffy.jpg" alt="Luffy" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets\images\zoro.jpg" alt="zoro"
-                      width="32" height="32">
+                    <img src="assets\images\zoro.jpg" alt="zoro" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets/images/Sanji.png" alt="Sanji"
-                      width="32" height="32">
+                    <img src="assets/images/Sanji.png" alt="Sanji" width="32" height="32">
                   </a>
                 </li>
 
@@ -589,15 +593,13 @@
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets\images\luffy.jpg" alt="Luffy"
-                      width="32" height="32">
+                    <img src="assets\images\luffy.jpg" alt="Luffy" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets\images\zoro.jpg" alt="zoro"
-                      width="32" height="32">
+                    <img src="assets\images\zoro.jpg" alt="zoro" width="32" height="32">
                   </a>
                 </li>
 
@@ -676,15 +678,13 @@
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets\images\luffy.jpg" alt="luffy"
-                      width="32" height="32">
+                    <img src="assets\images\luffy.jpg" alt="luffy" width="32" height="32">
                   </a>
                 </li>
 
                 <li class="card-avatar-item">
                   <a href="#">
-                    <img src="assets\images\zoro.jpg" alt="zoro"
-                      width="32" height="32">
+                    <img src="assets\images\zoro.jpg" alt="zoro" width="32" height="32">
                   </a>
                 </li>
 
@@ -763,6 +763,40 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('courtPieChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Volleyball', 'Basketball', 'Tennis'],
+        datasets: [{
+          data: [4, 1, 1], // Example data
+          backgroundColor: [
+            'rgba(54, 162, 235, 0.7)',
+            'rgba(255, 99, 132, 0.7)',
+            'rgba(255, 206, 86, 0.7)'
+          ],
+          borderColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 206, 86, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+  </script>
+
 
 </body>
 
